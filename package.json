@@ -13,6 +13,7 @@
   "author": "juniorUsca <junior.usca@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
+    "amqplib": "^0.5.3",
     "bcrypt": "^3.0.4",
     "body-parser": "^1.18.3",
     "boom": "^7.3.0",

@@ -8,5 +8,15 @@ services:
     volumes:
       - ./:/app
     tty: true
+  broker:
+    hostname: rabbit_node_1
+    image: rabbitmq:3
+    ports:
+      - 15672:15672
+      - 5672:5672
+    volumes:
+      - rabbit:/var/lib/rabbitmq
 volumes:
-  persistent:
+  persistent: # for db
+  rabbit:
+    driver: local
